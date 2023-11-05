@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    padding: 0px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid gray ;
+   align-items: center;
+   
+   
+}
+.nav-bar-one .logo {
+display: flex;
+gap: 10px;
+justify-content: space-between;
+align-items: center;
+
+}
+.nav-bar-two .nav-bar-ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;   
+}
+ .Explore {
+    padding: 9px 13px 9px ;
+     background-color: rgb(1, 1, 199);
+      border-radius:5px; 
+      color:white;  
+      text-decoration: none;  
+    }
+    .drop-down li{
+        display: block;
+    }                                   
+    .drop-down{
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+    display: none;
+    }
+.nav-bar-one ul li input {
+height:40px ;
+width:200px ;
+padding:0px  5px 0px; 
+
+}
+.search-bar
+{
+display: flex;
+justify-content: center;
+  
+}
+.search-bar-img
+{
+    height: 45px;
+    width: 40px;
+    background-color: rgb(1, 1, 199);
+    align-items: center;
+display: grid;
+justify-content: center;
+border-radius: 0px 8px 8px 0px;
+}
+
+.Online-degree{
+display: flex;
+justify-content: center;
+cursor:pointer ;
+}
+.Online-degree li a{
+    text-decoration: none;
+    color: black;
+
+
+}
+.language{
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+}
+.my-pc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ***********************************************************Nav-bar hover***************************************** */
+.logo li:hover ul.drop-down{
+    display: block;
+
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Main @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.main{
+    background-color: rgb(241, 241, 241);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+  
+}
+.filter{
+    display: grid;
+    justify-content: space-between;
+    height: 60vh;
+    width: 65vh;
+    align-items: center;
+    margin-left: 50px;
+    /* padding: 5px; */
+}
+
+.checkbox{
+    display: flex;
+font-size:17px ;
+gap: 10px;
+
+}
+.checkbox input{
+height: 20px;
+width: 20px;
+
+}
+
+.checkbox-font{
+display: flex;
+gap: 5px;
+
+}
+/* ****************************************************************************************************************** */
+.result{
+width: 100%;
+
+}
+.content-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 30px;
+}
+
+.card{
+    margin: 10px;
+    height: 490px;
+    width :300px;   
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+cursor: pointer;
+display: inline-block;
+transition: .5s;
+}
+.card-img img{
+    border-radius: 10px;
+}
+.content{
+    display: grid;
+    gap: 20px;
+}
+.Sort-by{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.Google{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.Google img{
+    border: .5px solid rgba(128, 128, 128, 0.445);
+    border-radius: 5px;
+}
+.Google p{
+    color: gray;
+
+}
+.reviews{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.reviews p{
+font-size: 14px;
+}
+/* ----------------------------------------------------------------------------------------------------------------- */
+.footer{
+display: flex;
+justify-content: space-around;
+}
+.footer-main{
+    display: flex;
+justify-content: space-around;
+width: 150vh;
+height: 20vh;
+}
+.mobile-App{
+    height: 60vh;
+width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
