@@ -9,7 +9,6 @@
     border-bottom:1px solid gray ;
    align-items: center;
    
-   
 }
 .nav-bar-one .logo {
 display: flex;
@@ -21,7 +20,8 @@ align-items: center;
 .nav-bar-two .nav-bar-ul{
     display: flex;
     gap: 20px;
-    align-items: center;   
+    align-items: center; 
+    
 }
  .Explore {
     padding: 9px 13px 9px ;
@@ -29,16 +29,45 @@ align-items: center;
       border-radius:5px; 
       color:white;  
       text-decoration: none;  
+      cursor:default;
+      border: 2px solid; 
+     
     }
     .drop-down li{
         display: block;
-    }                                   
+        padding: 10px;
+        width: 350px; 
+        height: 5px;
+    background-color:white ;
+    }  
+    .drop-down-main {
+    overflow: scroll;
+  background-color: white;
+    }  
+    .Goal li a{
+        color: black;
+        text-decoration: none;
+    }                               
     .drop-down{
-        width: 100%;
-        position: absolute;
-        z-index: 999;
+        margin-left: -100px;
+   position: absolute;
     display: none;
-    }
+    padding-top:34px ;
+    
+}
+.browse{
+    padding: 10px;
+    border: 2px solid blue;
+    color:blue;
+     border-radius: 5px;
+    text-decoration: none;
+}
+.browse:hover{
+    color: white;
+background-color: blue;
+text-decoration: underline;
+}
+
 .nav-bar-one ul li input {
 height:40px ;
 width:200px ;
@@ -49,6 +78,7 @@ padding:0px  5px 0px;
 {
 display: flex;
 justify-content: center;
+
   
 }
 .search-bar-img
@@ -86,9 +116,14 @@ cursor:pointer ;
 }
 
 /* ***********************************************************Nav-bar hover***************************************** */
-.logo li:hover ul.drop-down{
+.logo li:hover .drop-down {
     display: block;
 
+}
+.Explore:hover{
+background-color: white;
+color: blue;
+border: 2px solid black;
 }
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Main @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .main{
@@ -100,30 +135,35 @@ cursor:pointer ;
   
 }
 .filter{
-    display: grid;
-    justify-content: space-between;
-    height: 60vh;
+    margin-top: 25px;
+    height:90vh;
     width: 65vh;
     align-items: center;
     margin-left: 50px;
-    /* padding: 5px; */
-}
 
+}
+.subject{
+margin-top:30px;
+}
+.Level{
+    margin-top: 30px;
+   
+}
 .checkbox{
     display: flex;
+    align-items: center;
 font-size:17px ;
 gap: 10px;
+cursor: pointer;
+margin-top: 7px;
 
 }
-.checkbox input{
-height: 20px;
-width: 20px;
 
-}
 
 .checkbox-font{
 display: flex;
 gap: 5px;
+
 
 }
 /* ****************************************************************************************************************** */
@@ -184,7 +224,7 @@ transition: .5s;
 .reviews p{
 font-size: 14px;
 }
-/* ----------------------------------------------------------------------------------------------------------------- */
+
 .footer{
 display: flex;
 justify-content: space-around;
@@ -199,9 +239,12 @@ height: 20vh;
     height: 60vh;
 width: 100px;
 }
+/* ------------------------------------------------------------------------------------------------------------------- */
 
-
-
+.card:hover{
+box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.493);
+transform:scale(1.02);
+}
 
 
 
