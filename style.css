@@ -41,7 +41,7 @@ align-items: center;
     background-color:white ;
     }  
     .drop-down-main {
-    overflow: scroll;
+    overflow: auto;
   background-color: white;
     }  
     .Goal li a{
