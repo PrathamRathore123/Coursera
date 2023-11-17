@@ -10,9 +10,14 @@
 </head>
 
 <body>
-    <section>
-        <div class="NavBar">
-            <div class="nav-bar-one">
+ <div class="nav-bar-three">
+    <div style="display: flex;width: 100%; ">
+                <button>≡</button>
+             <div style="width: 91%;display: grid; justify-content: center;"><img src="Coursera-Logo.png" alt="" height="10px" width="10px"></div></div>  
+              </div>
+    <section> 
+          <div class="NavBar"> 
+           <div class="nav-bar-one" style="position: sticky; top: 0px;">
                 <ul type="none" class="logo">
                     <li><img src="Coursera-Logo.png" alt="" height="80px" width="130px"></li>
                     <li>
@@ -52,7 +57,7 @@
                     <li>
                         <ul type="none" class="search-bar">
                             <li><input type="text" placeholder="What do you want to learn ?"> </li>
-                            <li class="search-bar-img"><img src="loupe.png" alt="" height="20px" width="20px"></li>
+                            <li class="searchbar-img"><img src="loupe.png" alt="" ></li>
                         </ul>
                     </li>
                 </ul>
@@ -96,7 +101,8 @@
         </div>
     </section>
 
-    <!---------------------------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------------------------->
     <section class="main">
         <div class="filter">
             <h1>Filter by</h1>
@@ -104,27 +110,30 @@
                 <h3 style="cursor: default;">Subject</h3>
 
                 <div class="checkbox">
-                    <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                    <input type="checkbox" class="filter-checkbox" data-category="category1"
+                        style="height: 25px; width: 25px;">
                     <div class="checkbox-font">
-                        <p>Business (3,346)</p>
+                        <p>Business </p>
                     </div>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                    <input type="checkbox" class="filter-checkbox" data-category="category2"
+                        style="height: 25px; width: 25px;">
                     <div class="checkbox-font">
-                        <p>Computer Science (2,665)</p>
+                        <p>Computer Science </p>
                     </div>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                    <input type="checkbox" class="filter-checkbox" data-category="category3"
+                        style="height: 35px; width: 25px;">
                     <div class="checkbox-font">
-                        <p>Information Technology (1,800)</p>
+                        <p>Information Technology </p>
                     </div>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                    <input type="checkbox" class="filter-checkbox" id="checkbox4" style="height: 25px; width: 25px;">
                     <div class="checkbox-font">
-                        <p>Data Science (1,724)</p>
+                        <p>Data Science </p>
                     </div>
                 </div>
             </div>
@@ -133,27 +142,27 @@
                 <h3 style="cursor: default; ">Level</h3>
                 <div class="">
                     <div class="checkbox">
-                        <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                        <input type="checkbox" name="" id="checkbox5" style="height: 25px; width: 25px;">
                         <div class="checkbox-font">
-                            <p>Beginner (7,170)</p>
+                            <p>Beginner </p>
                         </div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                        <input type="checkbox" name="" id="checkbox6" style="height: 25px; width: 25px;">
                         <div class="checkbox-font">
-                            <p>Intermediate (7,170)</p>
+                            <p>Intermediate </p>
                         </div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                        <input type="checkbox" name="" id="checkbox7" style="height: 25px; width: 25px;">
                         <div class="checkbox-font">
-                            <p>Advance (7,170)</p>
+                            <p>Advance </p>
                         </div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" name="" id="" style="height: 25px; width: 25px;">
+                        <input type="checkbox" name="" id="checkbox8" style="height: 25px; width: 25px;">
                         <div class="checkbox-font">
-                            <p>Mixed (7,170)</p>
+                            <p>Mixed </p>
                         </div>
                     </div>
                 </div>
@@ -162,15 +171,18 @@
         <!-------------------------------------------------------------------------------------------------------------------->
         <div class="result">
             <div class="content-nav">
-                <h1>12,844 results</h1>
+                <div ><h1>12,844 results</h1>
+ <div class="filter-button"><a href="" >Filter</a></div>    
+            </div>
+                
                 <div class="Sort-by">
                     <h4>Sort by:</h4>
                     <p>Best Match</p>
                     <img src="dropdown.png" alt="" height="20px" width="20px">
                 </div>
             </div>
-            <div class="cards">
-                <div class="card">
+            <div class="cards" id="itemList">
+                <div class="card" data-categories="category1">
                     <div class="card-img">
                         <img src="Google-cybersecurity.png" alt="" height="210px" width="300px">
                     </div>
@@ -199,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-categories="category1">
                     <div class="card-img">
                         <img src="data-anaylist.png" alt="" height="210px" width="300px">
                     </div>
@@ -212,8 +224,8 @@
                             <h3>Google Data Analytics</h3>
                             <br>
                             <p style="line-height: 20px;"><b>skills you'll gain:</b>
-                                Data Analysis, R<br>
-                                Programming,SQL,Business<br>
+                                Data Analysis, R
+                                Programming,SQL,Business
                                 communication,Spreadsheet Software,...
                             </p>
                         </div>
@@ -229,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-categories="category2">
                     <div class="card-img">
                         <img src="Project Management.png" alt="" height="210px" width="300px">
                     </div>
@@ -242,8 +254,8 @@
 
                             <h3>Google Project Management</h3>
                             <br>
-                            <p style="line-height: 20px;"><b>skills you'll gain:</b>Project Management,<br>
-                                Strategy and Operations,Leadership and<br>
+                            <p style="line-height: 20px;"><b>skills you'll gain:</b>Project Management,
+                                Strategy and Operations,Leadership and
                                 Management,communication,Business...
                             </p>
                         </div>
@@ -259,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-categories="category3">
                     <div class="card-img">
                         <img src="digital marketing.png" alt="" height="210px" width="300px">
                     </div>
@@ -269,7 +281,7 @@
                             <p>Google</p>
                         </div>
                         <div>
-                            <h3>Google Digital Marketing&E-<br>commerce</h3>
+                            <h3>Google Digital Marketing & E-commerce</h3>
                             <br>
                             <p style="line-height: 20px;"><b>skills you'll gain:</b>Network Security,Python
                                 Programming,linux,Cloud
@@ -288,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-categories="category3">
                     <div class="card-img">
                         <img src="it support.png" alt="" height="210px" width="300px">
                     </div>
@@ -317,7 +329,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-categories="category2">
                     <div class="card-img">
                         <img src="IBM data science.png" alt="" height="210px" width="300px">
                     </div>
@@ -346,7 +358,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-categories="category2">
                     <div class="card-img">
                         <img src="ux design.png" alt="" height="210px" width="300px">
                     </div>
@@ -379,11 +391,12 @@
         </div>
 
     </section>
-
+    <br>
+    <br>
     <section class="footer">
         <div class="footer-main">
-            <div class="">
-                <h1 style="margin-top: 20px;">Coursera</h1>
+            <div >
+                <h1 class="Coursera">Coursera</h1>
                 <div style="margin-top: 30px; color: gray;">
                     <p>About</p>
                     <p>What We Offer</p>
@@ -403,7 +416,7 @@
                 </div>
             </div>
             <div>
-                <h1 style="margin-top: 20px;">Community</h1>
+                <h1 class="Community">Community</h1>
                 <div style="margin-top: 30px; color: gray; cursor: pointer;">
                     <p>Learner</p>
                     <p>Partener</p>
@@ -415,7 +428,7 @@
                 </div>
             </div>
             <div>
-                <h1 style="margin-top: 30px;">More</h1>
+                <h1 class="More">More</h1>
                 <div style="margin-top: 30px; color: gray;">
                     <p>Press</p>
                     <p>Investor</p>
@@ -432,15 +445,12 @@
                 </div>
             </div>
         </div>
-        <div class="mobile-App">
-
-        </div>
+       
 
     </section>
-    <hr>
-    <p style="color: black; margin: 10px;">2023 Coursera Inc. All rights reserved.</p>
-    <br>
+
+
+    <script src="style .js"></script>
 
 </body>
-
 </html
